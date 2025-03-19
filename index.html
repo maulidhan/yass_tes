@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2 class="logo">My<span>Portfolio</span></h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#projects">Projek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Halo, Saya <span>Nama Anda</span></h1>
+        <p>Seorang Web Developer & Desainer</p>
+        <a href="#projects" class="btn">Lihat Projek</a>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seorang pengembang web dengan pengalaman dalam HTML, CSS, dan JavaScript.</p>
+    </section>
+
+    <!-- Projek -->
+    <section id="projects" class="projects">
+        <h2>Projek Saya</h2>
+        <div class="gallery">
+            <div class="image" onclick="openModal('images/project1.jpg')">
+                <img src="images/project1.jpg" alt="Project 1">
+            </div>
+            <div class="image" onclick="openModal('images/project2.jpg')">
+                <img src="images/project2.jpg" alt="Project 2">
+            </div>
+            <div class="image" onclick="openModal('images/project3.jpg')">
+                <img src="images/project3.jpg" alt="Project 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+        <h2>Kontak Saya</h2>
+        <p>Email: contoh@email.com</p>
+        <p>Telepon: 0812-3456-7890</p>
+    </section>
+
+    <!-- Modal untuk gambar -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
